@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo | Pinnacle Pathways</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #18bc9c;
+      --light: #ecf0f1;
+      --dark: #34495e;
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: var(--primary);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .demo-hero {
+      text-align: center;
+      padding: 4rem 2rem 2rem 2rem;
+      background: linear-gradient(to right, #18bc9c, #2c3e50);
+      color: white;
+    }
+
+    .demo-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .demo-hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .demo-content {
+      max-width: 700px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .demo-content h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .demo-content p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .demo-video {
+      width: 100%;
+      max-width: 560px;
+      aspect-ratio: 16 / 9;
+      margin: 0 auto 1.5rem auto;
+      background: #eee;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .demo-video iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .demo-actions {
+      margin-top: 1.5rem;
+    }
+
+    .demo-actions a {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 0.4rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .demo-actions a:hover {
+      background: #149174;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Pinnacle Pathways</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="demo.html">Demo</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="demo-hero">
+      <h1>Experience Our Demo</h1>
+      <p>See Pinnacle Pathways in action! Explore our interactive e-learning platform and discover how we make education engaging and effective.</p>
+    </section>
+    <section class="demo-content">
+      <h2>Interactive Demo</h2>
+      <p>Watch the video below or try a sample module to get a feel for our platform's features and user experience.</p>
+      <div class="demo-video">
+        <!-- Replace the src with your actual demo video link -->
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demo Video" allowfullscreen></iframe>
+      </div>
+      <div class="demo-actions">
+        <a href="#" onclick="alert('Demo module coming soon!'); return false;">Try a Sample Module</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mount Enterprises LLC. All rights reserved.</p>
+  </footer>
+</body>
+</html>

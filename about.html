@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Pinnacle Pathways</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #18bc9c;
+      --light: #ecf0f1;
+      --dark: #34495e;
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: var(--primary);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .about-section {
+      max-width: 800px;
+      margin: 4rem auto 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+      text-align: center;
+    }
+
+    .about-section h1 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+
+    .about-section p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .about-section ul {
+      text-align: left;
+      display: inline-block;
+      margin: 0 auto 1.5rem auto;
+      padding-left: 1.2rem;
+      color: var(--dark);
+    }
+
+    .about-section li {
+      margin-bottom: 0.7rem;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Pinnacle Pathways</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="demo.html">Demo</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <h1>About Pinnacle Pathways</h1>
+      <p>
+        Pinnacle Pathways is dedicated to transforming the e-learning experience through innovative, interactive, and accessible solutions. Our mission is to empower learners and educators with tools that make education engaging and effective.
+      </p>
+      <ul>
+        <li><strong>Modern Design:</strong> Clean, intuitive interfaces for seamless navigation.</li>
+        <li><strong>Interactive Content:</strong> Dynamic modules that keep learners engaged.</li>
+        <li><strong>Custom Solutions:</strong> Tailored e-learning platforms for organizations and individuals.</li>
+        <li><strong>Support & Training:</strong> Ongoing assistance to ensure your success.</li>
+      </ul>
+      <p>
+        Founded by a team passionate about education and technology, Pinnacle Pathways partners with schools, businesses, and nonprofits to deliver results-driven learning experiences.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mount Enterprises LLC. All rights reserved.</p>
