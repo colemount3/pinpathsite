@@ -92,12 +92,51 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h1>Welcome to Mentis eLearning</h1>
-      <p>Your partner in modern, interactive e-learning solutions.</p>
-    </section>
-  </main>
-
+  <section class="hero">
+    <h1>Welcome to Mentis eLearning</h1>
+    <p>Your partner in modern, interactive eLearning solutions.</p>
+    <div class="image-bar">
+      <img src="https://cdn.pixabay.com/photo/2019/12/28/16/22/new-york-4725115_640.jpg" alt="New York Skyline" />
+      <img src="https://via.placeholder.com/640x360?text=Placeholder+1" alt="Placeholder 1" />
+      <img src="https://via.placeholder.com/640x360?text=Placeholder+2" alt="Placeholder 2" />
+      <img src="https://via.placeholder.com/640x360?text=Placeholder+3" alt="Placeholder 3" />
+    </div>
+  </section>
+</main>
+<style>
+  .image-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .image-bar img {
+    width: 22vw;
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 12px rgba(65,105,225,0.15);
+    background: #eee;
+  }
+  @media (max-width: 900px) {
+    .image-bar img {
+      width: 45vw;
+      height: 120px;
+    }
+  }
+  @media (max-width: 600px) {
+    .image-bar {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .image-bar img {
+      width: 90vw;
+      height: 120px;
+</style>
   <footer>
     <p>&copy; 2025 Mount Enterprises LLC. All rights reserved.</p>
   </footer>
